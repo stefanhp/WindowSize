@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Comment here. (1.0a10c2) -->
+<Proj>
+<ProjName>Preferences.xib.strings</ProjName>
+
+<!--                               -->
+<!--    Preferences.xib.strings    -->
+<!--                               -->
+<File>
+<Filepath>Preferences.xib.strings</Filepath>
+
+<TextItem>
+<Description> Class = &quot;NSWindow&quot;; title = &quot;Preferences&quot;; ObjectID = &quot;1&quot;; </Description>
+<Position>1.title</Position>
+<TranslationSet>
+
+	<base loc="en"          >Preferences</base>
+	<tran loc="fr" origin="">Préférences</tran>
+
+</TranslationSet>
+</TextItem>
+
+<TextItem>
+<Description> Class = &quot;NSTextFieldCell&quot;; title = &quot;Width:&quot;; ObjectID = &quot;11&quot;; </Description>
+<Position>11.title</Position>
+<TranslationSet>
+
+	<base loc="en"          >Width:</base>
+	<tran loc="fr" origin="">Largeur:</tran>
+
+</TranslationSet>
+</TextItem>
+
+<TextItem>
+<Description> Class = &quot;NSTextFieldCell&quot;; title = &quot;Height:&quot;; ObjectID = &quot;13&quot;; </Description>
+<Position>13.title</Position>
+<TranslationSet>
+
+	<base loc="en"          >Height:</base>
+	<tran loc="fr" origin="">Hauteur:</tran>
+
+</TranslationSet>
+</TextItem>
+
+<TextItem>
+<Description> Class = &quot;NSTextFieldCell&quot;; title = &quot;Position X:&quot;; ObjectID = &quot;5&quot;; </Description>
+<Position>5.title</Position>
+<TranslationSet>
+
+	<base loc="en"          >Position X:</base>
+	<tran loc="fr" origin="">Position X:</tran>
+
+</TranslationSet>
+</TextItem>
+
+<TextItem>
+<Description> Class = &quot;NSTextFieldCell&quot;; title = &quot;Custom Size&quot;; ObjectID = &quot;7&quot;; </Description>
+<Position>7.title</Position>
+<TranslationSet>
+
+	<base loc="en"          >Custom Size</base>
+	<tran loc="fr" origin="">Taille sur mesure</tran>
+
+</TranslationSet>
+</TextItem>
+
+<TextItem>
+<Description> Class = &quot;NSTextFieldCell&quot;; title = &quot;Position Y:&quot;; ObjectID = &quot;9&quot;; </Description>
+<Position>9.title</Position>
+<TranslationSet>
+
+	<base loc="en"          >Position Y:</base>
+	<tran loc="fr" origin="">Position Y:</tran>
+
+</TranslationSet>
+</TextItem>
+
+</File>
+</Proj>

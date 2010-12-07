@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle"  xmlns:dc="http://purl.org/dc/elements/1.1/">
+	<channel>
+		<title>WindowSize's Changelog</title>
+		<link>http://www.pistache-soft.ch/software/WindowSize/appcast.xml</link>
+		<description>Most recent changes with links to updates.</description>
+		<language>en</language>
+		<item>
+			<title>Version 1.0.414</title>
+			<description>Version 1.0.414</description>
+			<link>http://www.pistache-soft.ch/software/WindowSize/release-notes.html#version-1.0.414</link>
+			<sparkle:minimumSystemVersion>10.6.1</sparkle:minimumSystemVersion>
+			<sparkle:releaseNotesLink>http://www.pistache-soft.ch/software/WindowSize/release-notes.html#version-1.0.414</sparkle:releaseNotesLink>
+			<pubDate>Tue, 04 May 2010 20:34:39 +0200</pubDate>
+			<enclosure
+				url="http://www.pistache-soft.ch/download/WindowSize-1.0.414.zip"
+				sparkle:version="414"
+				sparkle:shortVersionString="1.0"
+				type="application/octet-stream"
+				length="1375485"
+				sparkle:dsaSignature="MCwCFACLW7h0wk2DcKdgulfB8L2Pvo2hAhRA68i9l9lpttSIUsTLP5EItkT8Cg=="
+			/>
+		</item>
+		<item>
+			<title>Version 0.3.406</title>
+			<description>Version 0.3.406</description>
+			<link>http://www.pistache-soft.ch/software/WindowSize/release-notes.html#version-0.3.406</link>
+			<sparkle:minimumSystemVersion>10.6.1</sparkle:minimumSystemVersion>
+			<sparkle:releaseNotesLink>http://www.pistache-soft.ch/software/WindowSize/release-notes.html#version-0.3.406</sparkle:releaseNotesLink>
+			<pubDate>Tue, 04 May 2010 12:22:03 +0200</pubDate>
+			<enclosure
+				url="http://www.pistache-soft.ch/download/WindowSize-0.3.406.zip"
+				sparkle:version="406"
+				sparkle:shortVersionString="0.3"
+				type="application/octet-stream"
+				length="1352260"
+				sparkle:dsaSignature="MC0CFQCWncu6p/VFO7KZgqPNKkb6bm4BIgIUFc52qrU0rLRx2wqqSlYJMPPcQHY="
+			/>
+		</item>
+		<item>
+			<title>Version 0.2.405</title>
+			<description>Version 0.2.405</description>
+			<link>http://www.pistache-soft.ch/software/WindowSize/release-notes.html#version-0.2.405</link>
+			<sparkle:minimumSystemVersion>10.6.1</sparkle:minimumSystemVersion>
+			<sparkle:releaseNotesLink>http://www.pistache-soft.ch/software/WindowSize/release-notes.html#version-0.2.405</sparkle:releaseNotesLink>
+			<pubDate>Mon, 03 May 2010 21:21:50 +0200</pubDate>
+			<enclosure
+				url="http://www.pistache-soft.ch/download/WindowSize-0.2.405.zip"
+				sparkle:version="405"
+				sparkle:shortVersionString="0.2"
+				type="application/octet-stream"
+				length="1349815"
+				sparkle:dsaSignature="MC0CFHeJNXgz8qIbFh7iuuMMGD0zg/QmAhUAz8+hOcoZVLLJBK+9eP1SgGnI88Q="
+			/>
+		</item>
+		<item>
+			<title>Version 0.1.404</title>
+			<description>Version 0.1.404</description>
+			<link>http://www.pistache-soft.ch/software/WindowSize/release-notes.html#version-0.1.404</link>
+			<sparkle:minimumSystemVersion>10.6.1</sparkle:minimumSystemVersion>
+			<sparkle:releaseNotesLink>http://www.pistache-soft.ch/software/WindowSize/release-notes.html#version-0.1.404</sparkle:releaseNotesLink>
+			<pubDate>Mon, 03 May 2010 13:54:28 +0200</pubDate>
+			<enclosure
+				url="http://www.pistache-soft.ch/download/WindowSize-0.1.404.zip"
+				sparkle:version="404"
+				sparkle:shortVersionString="0.1"
+				type="application/octet-stream"
+				length="1242498"
+				sparkle:dsaSignature="MC0CFQCHgOCMm12/uqtz0i3adcz+UkffBQIUf0IwoK7Q4OQoN4kJx02IgisinPw="
+			/>
+		</item>
+		
+	</channel>
+</rss>

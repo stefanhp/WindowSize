@@ -1,0 +1,7 @@
+// Extract string files from xib files
+mv Localization/fr/_NewBase/Preferences.xib.strings ../WindowSize-Localization/fr/_OldBase/
+ibtool --export-strings-file Localization/fr/_NewBase/Preferences.xib.strings English.lproj/Preferences.xib 
+
+
+// Update of french localization for all xib
+ibtool --strings-file Localization/fr/_NewLoc/Preferences.xib.strings --write fr.lproj/Preferences.xib English.lproj/Preferences.xib

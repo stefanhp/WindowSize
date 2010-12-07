@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CustomKeys</key>
+	<dict>
+		<key>BaseLocale</key>
+		<string>en</string>
+		<key>BrowserTickedFilesList</key>
+		<array>
+			<string>Preferences.xib.strings</string>
+		</array>
+		<key>BrowserWindowHeight</key>
+		<integer>288</integer>
+		<key>BrowserWindowLeft</key>
+		<integer>198</integer>
+		<key>BrowserWindowTop</key>
+		<integer>169</integer>
+		<key>BrowserWindowWidth</key>
+		<integer>1167</integer>
+		<key>FileMatcherIsVisible</key>
+		<false/>
+		<key>InspectorIsVisible</key>
+		<false/>
+		<key>TargetLocale</key>
+		<string>fr</string>
+	</dict>
+	<key>LocSetList</key>
+	<array>
+		<dict>
+			<key>LogFile</key>
+			<string>.svn</string>
+			<key>NewBase</key>
+			<string>.svn</string>
+			<key>NewLoc</key>
+			<string>.svn</string>
+			<key>OldBase</key>
+			<string>.svn</string>
+			<key>OldLoc</key>
+			<string>.svn</string>
+		</dict>
+		<dict>
+			<key>ApplicationDictionary</key>
+			<string>Preferences.xib.strings.ad</string>
+			<key>LogFile</key>
+			<string>Preferences.xib.strings</string>
+			<key>NewBase</key>
+			<string>Preferences.xib.strings</string>
+			<key>NewLoc</key>
+			<string>Preferences.xib.strings</string>
+			<key>WorkGlossary</key>
+			<string>Preferences.xib.strings.wg</string>
+		</dict>
+	</array>
+	<key>ProjectName</key>
+	<string>fr</string>
+</dict>
+</plist>
