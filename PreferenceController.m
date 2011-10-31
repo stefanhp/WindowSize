@@ -18,8 +18,12 @@
     if (self) {
 		// Set defaults
 		NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
-		NSArray *keys = [NSArray arrayWithObjects:@"customX", @"customY", @"customWidth", @"customHeight", nil];
-		NSArray *objects = [NSArray arrayWithObjects:@"0", @"20", @"1024", @"768", nil];
+		NSArray *keys = [NSArray arrayWithObjects:@"customX", @"customY", @"customWidth", @"customHeight",
+                         @"custom2X", @"custom2Y", @"custom2Width", @"custom2Height",
+                         nil];
+		NSArray *objects = [NSArray arrayWithObjects:@"0", @"20", @"1024", @"768",
+                            @"0", @"20", @"1280", @"450",
+                            nil];
 		NSDictionary *appDefaults = [NSDictionary dictionaryWithObjects:objects forKeys:keys];
 		[defaults registerDefaults:appDefaults];
 		
@@ -32,6 +36,15 @@
 												   object:tfW];
 		[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(editingDidEnd:) name:NSControlTextDidEndEditingNotification
 												   object:tfH];
+        
+		[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(editingDidEnd:) name:NSControlTextDidEndEditingNotification
+												   object:tfX2];
+		[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(editingDidEnd:) name:NSControlTextDidEndEditingNotification
+												   object:tfY2];
+		[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(editingDidEnd:) name:NSControlTextDidEndEditingNotification
+												   object:tfW2];
+		[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(editingDidEnd:) name:NSControlTextDidEndEditingNotification
+												   object:tfH2];
 
     }
     return self;
@@ -42,8 +55,8 @@
 }
 
 - (IBAction)updateMenu:(id)sender{
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
 	if(customSizeMenuItem != nil){
-		NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
 		NSString* title = [NSString stringWithFormat:NSLocalizedStringWithDefaultValue(@"MENU_CUSTOM", 
 																					   @"WindowSize", 
 																					   [NSBundle mainBundle], 
@@ -51,6 +64,17 @@
 																					   @"Custom menu entry"),
 						   [defaults integerForKey:@"customWidth"], 
 						   [defaults integerForKey:@"customHeight"]];
+		[customSizeMenuItem setTitle:title];
+		[customSizeMenuItem setEnabled:[WindowSizeApp screensCanDisplay:[self customRect]]];
+	}
+	if(customSizeMenuItem2 != nil){
+		NSString* title = [NSString stringWithFormat:NSLocalizedStringWithDefaultValue(@"MENU_CUSTOM2", 
+																					   @"WindowSize", 
+																					   [NSBundle mainBundle], 
+																					   @"Set window size to %i x %i (custom 2)", 
+																					   @"Custom menu entry"),
+						   [defaults integerForKey:@"custom2Width"], 
+						   [defaults integerForKey:@"custom2Height"]];
 		[customSizeMenuItem setTitle:title];
 		[customSizeMenuItem setEnabled:[WindowSizeApp screensCanDisplay:[self customRect]]];
 	}
@@ -63,6 +87,14 @@
 					  [defaults integerForKey:@"customY"], 
 					  [defaults integerForKey:@"customWidth"], 
 					  [defaults integerForKey:@"customHeight"]);
+}
+
+- (NSRect)customRect2{
+	NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+	return NSMakeRect([defaults integerForKey:@"custom2X"], 
+					  [defaults integerForKey:@"custom2Y"], 
+					  [defaults integerForKey:@"custom2Width"], 
+					  [defaults integerForKey:@"custom2Height"]);
 }
 
 - (IBAction)showWindow:(id)sender{

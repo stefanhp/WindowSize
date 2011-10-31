@@ -1,5 +1,5 @@
 // Extract string files from xib files
-mv Localization/fr/_NewBase/Preferences.xib.strings ../WindowSize-Localization/fr/_OldBase/
+mv Localization/fr/_NewBase/Preferences.xib.strings Localization/fr/_OldBase/
 ibtool --export-strings-file Localization/fr/_NewBase/Preferences.xib.strings English.lproj/Preferences.xib 
 
 

@@ -18,6 +18,7 @@
 #define TAG_PREFERENCES 6
 #define TAG_UPDATE 7
 #define TAG_QUIT 8
+#define TAG_CUSTOM2 9
 
 #define ORIGIN_X 0
 #define ORIGIN_Y 20
@@ -155,7 +156,7 @@ int main(void) {
 	[tempMenuItem setTag:TAG_1080I];
 	[tempMenuItem setEnabled:[WindowSizeApp screensCanDisplay:NSMakeRect(ORIGIN_X, ORIGIN_Y, WIDTH_1080I, HEIGHT_1080I)]];
 	
-	// Custom menu
+	// Custom menus
 	if(prefs != nil){
 		NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
 		NSString* title = [NSString stringWithFormat:NSLocalizedStringWithDefaultValue(@"MENU_CUSTOM", 
@@ -171,6 +172,21 @@ int main(void) {
 		[tempMenuItem setTarget:self];
 		[tempMenuItem setTag:TAG_CUSTOM];
 		[tempMenuItem setEnabled:[WindowSizeApp screensCanDisplay:[prefs customRect]]];
+        
+        title = [NSString stringWithFormat:NSLocalizedStringWithDefaultValue(@"MENU_CUSTOM2", 
+                                                                             @"WindowSize", 
+                                                                             [NSBundle mainBundle], 
+                                                                             @"Set window size to %i x %i (custom 2)", 
+                                                                             @"Custom menu entry"),
+                 [defaults integerForKey:@"custom2Width"], 
+                 [defaults integerForKey:@"custom2Height"]];
+		tempMenuItem = (NSMenuItem *)[m addItemWithTitle:title
+												  action:@selector(setSizeToCustom2:) 
+										   keyEquivalent:@""];
+		[tempMenuItem setTarget:self];
+		[tempMenuItem setTag:TAG_CUSTOM2];
+		[tempMenuItem setEnabled:[WindowSizeApp screensCanDisplay:[prefs customRect]]];
+
 		[prefs setCustomSizeMenuItem:tempMenuItem];
 	}
 	
@@ -247,6 +263,12 @@ int main(void) {
 - (void)setSizeToCustom:(id)sender{
 	if(prefs != nil){
 		[self setSizeAndPositionTo:[prefs customRect]];
+	}
+}
+
+- (void)setSizeToCustom2:(id)sender{
+	if(prefs != nil){
+		[self setSizeAndPositionTo:[prefs customRect2]];
 	}
 }
 
