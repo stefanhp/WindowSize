@@ -1,2 +1,13 @@
-/.DS_Store
-/Resources/.DS_Store
+# Mac OS X
+.DS_Store
+
+# Xcode noise
+*.pbxuser
+*.mode1v3
+*.mode2v3
+*.perspectivev3
+*.xcuserstate
+project.xcworkspace/
+xcuserdata/
+build
+*~.nib
