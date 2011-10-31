@@ -23,6 +23,7 @@
 - (void)setSizeTo1080p:(id)sender;
 - (void)setSizeTo1080i:(id)sender;
 - (void)setSizeToCustom:(id)sender;
+- (void)setSizeToCustom2:(id)sender;
 - (void)shutdown:(id)sender;
 - (void)showPreferences:(id)sender;
 - (void)checkForUpdates:(id)sender;
