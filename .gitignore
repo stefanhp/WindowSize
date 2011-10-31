@@ -1,13 +1,2 @@
-# xcode noise
-*.pbxuser
-*.mode1v3
-*.mode2v3
-*.perspectivev3
-
-# SVN noise
-.svn
-
-# osx noise
-.DS_Store
-
-# project specific
+/.DS_Store
+/Resources/.DS_Store
