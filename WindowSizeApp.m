@@ -77,14 +77,14 @@ int main(void) {
 
 }
 
-/*
 - (void)checkForUpdates:(id)sender{
+    /*
 	if(updater != nil){
 		[[NSApplication sharedApplication] unhide:self];
 		[updater checkForUpdates:sender];
 	}
+     */
 }
-*/
 
 - (void) applicationWillTerminate:(NSNotification *)aNotification {
 	[self release];
