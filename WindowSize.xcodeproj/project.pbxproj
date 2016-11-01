@@ -26,8 +26,6 @@
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
 		F8074FA8119056E600183231 /* Preferences.xib in Resources */ = {isa = PBXBuildFile; fileRef = F8074FA6119056E600183231 /* Preferences.xib */; };
 		F80750A91190630E00183231 /* PreferenceController.m in Sources */ = {isa = PBXBuildFile; fileRef = F80750A81190630E00183231 /* PreferenceController.m */; };
-		F825CF4B12AE8A6C001197DE /* Sparkle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F825CF3D12AE8A06001197DE /* Sparkle.framework */; };
-		F825CF5B12AE8A96001197DE /* Sparkle.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = F825CF3D12AE8A06001197DE /* Sparkle.framework */; };
 		F8AB159B118EE26800919BD7 /* Credits.html in Resources */ = {isa = PBXBuildFile; fileRef = F8AB1599118EE26800919BD7 /* Credits.html */; };
 		F8AB15BD118EE61A00919BD7 /* WindowSize.strings in Resources */ = {isa = PBXBuildFile; fileRef = F8AB15BB118EE61A00919BD7 /* WindowSize.strings */; };
 		F8C05C6A118E36470078145E /* ScriptingBridge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8C05C69118E36470078145E /* ScriptingBridge.framework */; };
@@ -76,13 +74,6 @@
 			remoteGlobalIDString = 5D06E8D00FD68C7C005AE3F6;
 			remoteInfo = BinaryDelta;
 		};
-		F825CF5C12AE8AB3001197DE /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = F825CF2F12AE8A06001197DE /* Sparkle.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 8DC2EF4F0486A6940098B216;
-			remoteInfo = Sparkle;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -92,7 +83,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				F825CF5B12AE8A96001197DE /* Sparkle.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,7 +127,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F825CF4B12AE8A6C001197DE /* Sparkle.framework in Frameworks */,
 				8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */,
 				F8C05C6A118E36470078145E /* ScriptingBridge.framework in Frameworks */,
 			);
@@ -288,7 +277,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				F825CF5D12AE8AB3001197DE /* PBXTargetDependency */,
 			);
 			name = WindowSize;
 			productInstallPath = "$(HOME)/Applications";
@@ -418,14 +406,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		F825CF5D12AE8AB3001197DE /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = Sparkle;
-			targetProxy = F825CF5C12AE8AB3001197DE /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		089C165CFE840E0CC02AAC07 /* InfoPlist.strings */ = {

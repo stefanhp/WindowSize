@@ -54,7 +54,7 @@ int main(void) {
 
 - (id)init{
 	if (self = [super init]){
-		updater = [[[SUUpdater alloc]init]retain];
+//		updater = [[[SUUpdater alloc]init]retain];
 		prefs = [[[PreferenceController alloc]init]retain];
 		[NSBundle loadNibNamed:@"Preferences" owner:prefs];
 	}
@@ -77,13 +77,14 @@ int main(void) {
 
 }
 
+/*
 - (void)checkForUpdates:(id)sender{
 	if(updater != nil){
 		[[NSApplication sharedApplication] unhide:self];
 		[updater checkForUpdates:sender];
 	}
 }
-
+*/
 
 - (void) applicationWillTerminate:(NSNotification *)aNotification {
 	[self release];
@@ -94,7 +95,7 @@ int main(void) {
 }
 
 - (void) dealloc {
-	[updater release];
+//	[updater release];
 	[statusItem release];
 	[menuIcon release];
 	[prefs release];

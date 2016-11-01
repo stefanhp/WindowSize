@@ -7,12 +7,12 @@
 //
 
 #import <Cocoa/Cocoa.h>
-#import <Sparkle/Sparkle.h>
+//#import <Sparkle/Sparkle.h>
 
 @class PreferenceController;
 
 @interface WindowSizeApp : NSObject <NSApplicationDelegate> {
-	SUUpdater *updater;
+//	SUUpdater *updater;
 	NSStatusItem *statusItem;
 	NSImage *menuIcon;
 	PreferenceController *prefs;
